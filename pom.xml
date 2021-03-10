@@ -34,6 +34,23 @@
 		</dependency>
 
 	</dependencies>
+	
+	<distributionManagement>
+	<repository>
+	      <id>nexus</id>
+	      <name>wallmart release repo</name>
+	      <url>http://35.154.148.249:8081/repository/wallmart_release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>wallmart snapshot Nexus Repository </name>
+	      <url>http://35.154.148.249:8081/repository/wallmart_snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
+	
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
